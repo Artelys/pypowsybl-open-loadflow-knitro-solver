@@ -151,10 +151,8 @@ def nad_explorer_with_slack(network: Network,
         parameters: NadParameters for layout properties
         fixed_nad_positions: positions dataframe for VL layout
         slack_info: DataFrame with slack information
-        vl_descriptions: Optional DataFrame with VL descriptions
-        bus_node_styles: Optional DataFrame with bus node styles
-        edge_styles: Optional DataFrame with edge styles
         nad_profile: Optional NadProfile for original styling
+        outerloop: int value, to choose what iteration result to vizualized
     
     Returns:
         NAD explorer with slack info 
@@ -162,7 +160,6 @@ def nad_explorer_with_slack(network: Network,
     
     vls = network.get_voltage_levels(attributes=[])
     nad_widget = None
-    # bus_ids = list(slack_info['bus_id'])
     slack_info["has_slack"] = slack_info["slackValue_pu"].notna()
     
 
