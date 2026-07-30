@@ -1,0 +1,2 @@
+bus_id;type;slackValue_pu;voltage_level_id;generator;controleVoltage;transfo;shunt;load;load_violation;gen_violation;outerloop_iteration
+VL5_0;V;0.052949;VL5;;VoltageControl(type=GENERATOR, controlledBus='VL5_0', controllerElements=[VL2_0], mergeStatus=MAIN, mergedDependentVoltageControlsSize=0);;;VL5_0_load;0;0;0
