@@ -7,6 +7,8 @@ the load flow equations with the **non-linear solver Knitro** instead of the def
 
 The Knitro solver extension offers two different ways to model the load flow problem: either as a **constraint satisfaction problem** (without an objective function) or as an **optimisation problem** with relaxed constraints (and an objective function minimizing the violations). 
 
+To better understand the objective function, variable weights implementation of the **RELAXED** solver, refer to the internal documentation available at: [documentation Knitro Relaxed Solver](https://typst.app/project/pbarctkphiuUcXw9qVjZJs)
+
 ## PyPowSyBl with Knitro Solver extension: 
 
 The goal of this repositery and extension is to have a python vizualization, to interpret the results. 
