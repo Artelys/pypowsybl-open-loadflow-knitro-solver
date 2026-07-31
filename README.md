@@ -67,6 +67,9 @@ losses = calculate_dc_losses(network_DC, voltage_level_df)
     - Use `exportSolution`.
     -  The exported CSV file can subsequently be used for visualization with the `nad_explorer_with_slack` function through the `slack_info` parameter.
 
+4. **LOGGING MODE**
+- INFO : only the 5th lagest slack (in p.u value) per type are readable in the logging messages
+- DEBUG : all the slack are readable 
 
 Please see open load flow knitro solver readme https://github.com/powsybl/powsybl-open-loadflow-knitro-solver#knitro-parameters for details on each parameter.
 
